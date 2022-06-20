@@ -1,0 +1,12 @@
+@import url("../css/css\(import\).css");
+/*임포트는 항상 먼저 읽힌다*/
+
+p {
+    color: white;
+    background-color: red;
+}
+
+h3 {
+    color: white;
+    background-color: black;
+}

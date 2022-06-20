@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6월 셋째주 ToDoList</title>
+    <style>
+    * {
+      text-align: center;
+    }
+
+    a:hover {
+        color: rosybrown;
+    }
+
+    a:active {
+        color: brown;
+    }
+
+    table {
+      width : 500px;
+      height: 500px;
+      border : 1px solid black;
+      margin: auto;  
+    }
+
+    table .pink {
+        color: hotpink;
+    }
+
+    tr {
+      border : 1px solid black;
+    }
+
+    tr > .sou {
+        background-color: violet;
+    }
+
+    td {
+      border : 1px solid black;
+      width: 200px;
+      height: 1px;
+    }
+
+    td.jap {
+        color: cornflowerblue;
+    }
+
+    th {
+      border : 1px solid black;
+      width: 300px;
+      height: 1px;
+    }
+
+    input:focus {
+        background-color: blanchedalmond;
+    }
+
+    .pink + td {
+        background-color: lightseagreen;
+    }
+
+    .sou ~ td {
+        background-color: lime;
+    }
+
+    .eng td:first-child {
+        color: tomato;
+    }
+
+    .eng td:last-child {
+        color: turquoise;
+    }
+
+    .jap *:nth-child(2n) {
+        background-color: olivedrab;
+    }
+
+    .eng *:nth-child(3) {
+        background-color: darkgreen;
+    }
+
+    .list *:not(th,a) { 
+        background-color: skyblue;
+    }
+
+    .box {
+        font-size: 30px;
+    }
+
+    .box::before {
+        content: "베부터 ";
+    }
+
+    .box::after {
+        content: " 공부하자";
+    }
+    </style>
+
+</head>
+<body>
+    <h1>6/13일~6/17일 ToDoList</h1>
+    <div class="box">채우고</div>
+    <br>
+    <input type="text" placeholder="성함">
+    <p>*<b>Do</b>는 <u>Check</u>, <b>Do Not</b>은 <u>No Check</u></p>
+    <pre>*<strong>연필 이미지 클릭</strong>시 <em>네이버 사전</em>으로 이동합니다.</pre>
+    <br>
+    <table>
+        <tr class="list">
+            <th><a href="https://dict.naver.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAADnCAMAAABPJ7iaAAABKVBMVEX////+2WHqh43qQDXoWFru2sD45s+SkpKznHyQkZPqiY+hnI3pbXLoVFToWVjoV1jpMiT87e73uLfqg4ydkZKdjI2QlJJAQEL2tq/u7en+11j/+emQjo0AAAArLzWzm33T0cz+78JYWVtsbW8iHyDj0Ln89OuulHGwn4Ds38PsOzHg4OBiYmITFBfOzc4zMjVKS0y5ubk3NzitrKyAgIKdnZ0oJSYQBQrt6OINDBRLPjKYlItkZ2spIR6NfWbNv65dUkLBq47YxKjj29DJt6Lvo6H308PstaPokITrenXqh37sqZm7kXPQclvcXE3Ua1bBiWvkzcTsxa7bX0743N7HgWfkSj/Cp4vMkXzXemzjZ2L509L3vrz99Nf+2m3+4YX96q7+5Jj95Z6ktKqfAAAESElEQVR4nO3abVfTSBjGcezDmK2WCFlNmxYLtIS2gA+o+IRi1QKCgrK7sOtaC3z/D+EkLWUSgswc0nNncq7f4QUv7/+5k0nCYWICAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAGZeoBxmZpmXqCsamuPKAeYUyW5h8+op5hTJ7O2zPpXNvS8rzdsKmnGItq/ZG9NvOYeowxeLBet+2HjVXqOcbgaZ2nrTZmnlAPErul5fq6bduNxgr1JLHjS5v3054/ox4lZvxO89PWGo21lL1u8aXxA9I7RxrPq9TDxOpFfd07Rfy0l6+op4kVY6/X/bTVlTdvjQ3qcWLkMsY26vc972qGYaTobmOe/ILnyKgZix+pB4qNO0jzdfjWaoupWRsT03iZYaRlba6Y9t7wLL6gHioeTExb8NOMDvVQsXADaflB2uIH6rHiwCLSaqlYmxtK6wzS0rC2UNnwHKnVmtSDXVt4acO0NNxtLJw2PCI56tGuyb2QljdSsjZ2Ma1z1lajHu5a3N+l6f1xE1E2Okf4JUk93jVELU1I03ltLCrt/IjU+OOmEpmWP9+avh83LDrt/BzR9uOmcnWarmu7pEw8RzRdm3tZ2oKQpufHDbssbfjJVvP+SKLl6xa/03qhtFarlW8JR2ST03FtLF/qdkubQtrW9qedXa9t8DXa/Pxlb2//q6Hd2tySZWUyltUdprUOvhdN0yzmdlv5j/7O9tu+Pe3ekrs8LJMp8J9Nv2yraOY8ZnG75R2Rzb121tduf6OeVc20VfC6/DYv7WBYxhV3+RHZ/GtYxtsOqYdV8re/swGr1GP522bOb5vkP+aC0fxnVJbN3tmmHldFISOwGNsq5s4VdzrGoZCWvTNFPa88cWn+2m6bQpqZO/oqlrXbXeqB5U2Lafym2xSXxq/If/fFtGx7knpgeYXA1jKF3UBaLvffYTZAoysycKvxtJ1Q2vdsKO1/6ollTWVCaYFbzTtIwmk/qEeWNWVlCmpp09Qjy5qyVLeGNHoRaZNISzqkIS1RkIa0REEa0hIFaUhLFKQhLVGQhrREQRrSEkU9rUQ9siykIS1RkIa0REEa0hIlIs1MSVr57p9Bd68ySz2yrHL15r2Am2H3QmapR5bF09RUZ6lHloU0pCVKufqHolnqkWWVb6nS5h/iKzcUOXPUI8uqOEhDWoIgDWmJkuLD31VO61GPLO2nalqFemJpfdWbjXpgeceKaX3qgeX11NKcY+qBFSim6XOKTEycqLVRj6tC6YrU6nrkZ6RKmj5Hv0dhbZotTenR5lLPqkj6FVmf98cRyce2o9HjekTqknS0uxx9Um16nY4jP69s0+o9JOCKvTm67sxz+rs2p6/lfXZmzrksztHuUX3BSXSc09f4YjxTOb0Q5zh9bc+PkLk+r/EDHf7Ljf5xCjY24vbmTk/63MlxL01dAAAAAAAAAAAAAAAAAAAAAAAAAAAAol/tT6nKJVQUvQAAAABJRU5ErkJggg==" width="80" height="100">연필 click</a></th>
+            <th>13일(월)</th>
+            <th>14일(화)</th>
+            <th>15일(수)</th>
+            <th>16일(목)</th>
+            <th>17일(금)</th>
+            <td>끝</td>
+        </tr>
+        <tr class="eng">
+            <td>영어 단어 외우기</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+        </tr>
+        <tr class="chi">
+            <td>중국어 단어 외우기</td>
+            <td><input type="checkbox">체크</td>
+            <td class="pink"><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+        </tr>
+        <tr class="jap">
+            <td>일본어 단어 외우기</td>
+            <td><input type="checkbox">체크</td>
+            <td class="jap"><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td class="jap"><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+            <td><input type="checkbox">체크</td>
+        </tr>
+        <tr class="fra">
+          <td>불어 단어 외우기</td>
+          <td><input type="checkbox">체크</td>
+          <td class="pink"><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+      </tr>
+      <tr class="kor">
+          <td>한국어 단어 외우기</td>
+          <td><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+          <td class="sou"><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+          <td><input type="checkbox">체크</td>
+      </tr>
+    </table>
+    
+   
+    
+</body>
+</html>

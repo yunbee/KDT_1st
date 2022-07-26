@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+            background-image: url("https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-attachment: fixed;
+        }
+        .scroll {
+            position: relative;
+            width: 100px;
+            height: 3000px;
+            left: 20px;
+            background: linear-gradient(to bottom, rgb(162, 162, 62),rgb(225, 203, 94));
+        }
+        .container1 {
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            background-color: rgb(238, 239, 173);
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .container2 {
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            background-color: rgb(238, 239, 173);
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .item1 {
+            flex-basis: 150px;
+            height: 50px;
+            border-radius: 30px;
+            font-weight: 700;
+            background-color: rgb(171, 156, 35);
+            width: 200px;
+            text-align: center;
+            line-height: 50px;
+            color: rgb(238, 239, 173);
+        }
+        .item1:hover {
+            background-color: olive;
+        }
+        .item2 {
+            height: 50px;
+            border-radius: 30px;
+            font-weight: 700;
+            background-color: rgb(171, 156, 35);
+            width: 200px;
+            text-align: center;
+            line-height: 50px;
+            color: rgb(238, 239, 173);
+        }
+        .item2:hover {
+            background-color: olive;
+        }
+        .container2 *:nth-child(1) {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        .container2 *:nth-child(2) {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        .container2 *:nth-child(3) {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        .container2 *:nth-child(4) {
+            flex-grow: 2;
+            flex-basis: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="scroll"></div>
+    <div class="container1">
+        <div class="item1">item1</div>
+        <div class="item1">item2</div>
+        <div class="item1">item3</div>
+        <div class="item1">item4</div>
+    </div>
+    <div class="container2">
+        <div class="item2">고정비율1</div>
+        <div class="item2">고정비율2</div>
+        <div class="item2">고정비율3</div>
+        <div class="item2">고정비율4</div>
+    </div>
+</body>
+</html>

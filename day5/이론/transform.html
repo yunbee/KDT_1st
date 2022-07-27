@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 40px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            transition: 1s;
+        }
+        div.child {
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+            opacity: 0.5;
+            transition: 3s;
+            backface-visibility: hidden;
+        }
+
+
+        div>.child:active {
+            /* transform: rotate(720deg); */
+            /* transform: translate(40px, 40px); */
+            /* transform: translateX(200px); =translate(200px, 0) */
+            /* transform: translateY(200px); */
+            /* transform: scale(2); */
+            /* transform: rotate(45deg); */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: perspective(500px) rotateX(60deg); */
+            /* transform: skewX(45deg); */
+            /* transform: skew(0,-45deg); */
+            transform: perspective(500px) rotateY(180deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="child">가나다라</div>
+    </div>
+</body>
+</html>

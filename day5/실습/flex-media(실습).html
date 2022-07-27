@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            width: 200px;
+            height: 300px;
+            background-color: seagreen;
+            border: 2px solid black;
+        }
+        @media screen and (max-width:500px) {
+            body {
+                background-color: olive;
+            }
+        } */
+        body {
+            /*inline-block이 text여서 text-align 사용가능*/
+            text-align: center;
+        }
+        .container>div {
+            display: inline-block;
+            height: 300px;
+            width: 18%;
+            background-color: lightcoral;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

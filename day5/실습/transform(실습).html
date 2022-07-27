@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            margin-bottom: 20px;
+            transition: 1s;
+        }
+        .item1:active {
+            width: 100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            transform: translate(120px, 0) rotate(45deg);
+        }
+        .item2:active {
+            width: 100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            transform: translateX(100px, 0) scaleX(2);
+        }
+        .item3:active {
+            width: 100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            transform: perspective(500px) rotateY(180deg);
+        }
+        .item4:active {
+            width: 100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            transform: skewX(-45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+</body>
+</html>

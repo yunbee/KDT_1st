@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            height: 500px;
+            background-color: lemonchiffon;
+            flex-wrap: nowrap;
+        }
+        .container:active {
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .container .item {
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+            border: 2px solid purple;
+            box-sizing: border-box;
+        }
+        .container .item:hover {
+            background-color: lemonchiffon;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <!--div.container>div.item*7-->
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

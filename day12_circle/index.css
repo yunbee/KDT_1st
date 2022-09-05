@@ -1,0 +1,65 @@
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(97, 120, 88);
+    border-radius: 50%;
+    position: absolute;
+    animation: circle1 3s infinite;
+    left: 0%;
+    top: 0%;
+}
+
+@keyframes circle1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 400px;
+        top: 0px;
+    }
+
+    50% {
+        left: 400px;
+        top: 400px;
+    }
+
+    75% {
+        left: 0px;
+        top: 400px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+
+    25% {
+        left: 90%;
+        top: 0%;
+    }
+
+    50% {
+        left: 90%;
+        top: 90%;
+    }
+
+    75% {
+        left: 0%;
+        top: 90%;
+    }
+
+    100% {
+        left: 0%;
+        top: 0%;
+    }
+}
